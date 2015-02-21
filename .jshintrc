@@ -11,7 +11,7 @@
     "node": true,
     "predef": {
         "angular": false,
-        "jQuery": false,
+        "_": false,  // lodash utility library
 
         // jasmine globals
         "jasmine": false,
