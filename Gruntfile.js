@@ -575,6 +575,15 @@ module.exports = function ( grunt ) {
   ]);
 
   /**
+   * The `fastbuild` task gets your app ready to run for development, it is a subset of `build` task without coffee and karma.
+   */
+  grunt.registerTask( 'fastbuild', [
+    'clean', 'html2js', 'jshint', 'less:build',
+    'concat:build_css', 'copy:build_app_assets', 'copy:build_vendor_assets',
+    'copy:build_appjs', 'copy:build_vendorjs', 'copy:build_vendorcss', 'index:build'
+  ]);
+
+  /**
    * The `compile` task gets your app ready for deployment by concatenating and
    * minifying your code.
    */
