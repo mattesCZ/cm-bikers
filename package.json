@@ -1,16 +1,16 @@
 {
-  "author": "Josh David Miller",
-  "name": "ngbp",
-  "version": "0.3.2",
-  "homepage": "https://github.com/ngbp/ngbp",
+  "author": "Martin Tesar",
+  "name": "cm-bikers-client",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mattesCZ/cm-bikers-client",
   "licenses": {
     "type": "MIT",
-    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
+    "url": "https://raw.github.com/mattesCZ/cm-bikers-client/master/LICENSE"
   },
-  "bugs": "https://github.com/ngbp/ngbp/issues",
+  "bugs": "https://github.com/mattesCZ/cm-bikers-client/issues",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ngbp/ngbp.git"
+    "url": "git@github.com:mattesCZ/cm-bikers-client.git"
   },
   "dependencies": {},
   "devDependencies": {

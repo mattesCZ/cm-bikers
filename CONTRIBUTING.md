@@ -1,8 +1,8 @@
-# Contributing to `ngbp`
+# Contributing to `cm-bikers-client`
 
 ## Getting Started
 
-To get started, follow the [Detailed Installation](./README.md#detailed-installation)
+To get started, follow the [Detailed Installation](./README.md#development)
 guide from the main project README.
 
 ## Style
@@ -14,7 +14,7 @@ All pull requests must follow a few simple guidelines:
 - Avoid unnecessary changes. A PR should only contain the necessary changes for
   the particular feature/bug/documentation/... that it is meant for.
 - Commit messages (and therefore PR titles) must follow the format
-  `type(component): short message` and be absolutely no longer than 100
+  `issue(number of issue if any): short message` and be absolutely no longer than 100
   characters in length. 80 characters or less is preferable.
 
 This style is very similar to those for AngularJS, so check out [their

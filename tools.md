@@ -1,7 +1,8 @@
-# The Tools Used in `ngBoilerplate`
+# The Tools Used in `CM bikers client`
 
 ## Introduction
 
+`CM bikers client` is based on top of `ngBoilerplate`.
 `ngBoilerplate` is standards-based, so it uses all the usual tools to manage
 and develop client-side code. If you've developed modern, highly-organized
 JavaScript projects before, you are probably already familiar with at least most
