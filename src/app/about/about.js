@@ -1,7 +1,5 @@
 angular.module('cmBikers.about', [
-    'ui.router',
-    'placeholders',
-    'ui.bootstrap'
+    'ui.router'
 ])
 
 .config(function config($stateProvider) {

@@ -176,10 +176,8 @@ other libraries so that we can manage all of them in one simple place.
   "devDependencies": {
     "angular": "~1.0.7",
     "angular-mocks": "~1.0.7",
-    "bootstrap": "~2.3.2",
-    "angular-bootstrap": "~0.3.0",
-    "angular-ui-router": "~0.0.1",
-    "angular-ui-utils": "~0.0.3"
+    "bootstrap": "~3.1.1",
+    "angular-ui-router": "~0.0.1"
   },
   "dependencies": {}
 }
