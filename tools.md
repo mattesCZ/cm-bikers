@@ -174,10 +174,10 @@ other libraries so that we can manage all of them in one simple place.
   "name": "ng-boilerplate",
   "version": "0.2.0-SNAPSHOT",
   "devDependencies": {
-    "angular": "~1.0.7",
-    "angular-mocks": "~1.0.7",
-    "bootstrap": "~3.1.1",
-    "angular-ui-router": "~0.0.1"
+    "angular": "~1.3",
+    "angular-mocks": "~1.3",
+    "bootstrap": "~3.3",
+    "angular-ui-router": "~0.2"
   },
   "dependencies": {}
 }
