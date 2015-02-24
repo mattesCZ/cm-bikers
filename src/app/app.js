@@ -6,14 +6,14 @@ angular.module( 'cmBikers', [
     'ui.router'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
+.config( function ( $stateProvider, $urlRouterProvider ) {
     $urlRouterProvider.otherwise( '/home' );
 })
 
-.run( function run () {
+.run( function () {
 })
 
-.controller( 'AppCtrl', function AppCtrl ( $scope ) {
+.controller( 'AppCtrl', function ( $scope ) {
     $scope.$on('$stateChangeSuccess', function(event, toState){
         if ( angular.isDefined( toState.data.pageTitle ) ) {
             $scope.pageTitle = toState.data.pageTitle + ' | CM Bikers' ;

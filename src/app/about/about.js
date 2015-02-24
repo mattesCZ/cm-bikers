@@ -2,7 +2,7 @@ angular.module('cmBikers.about', [
     'ui.router'
 ])
 
-.config(function config($stateProvider) {
+.config(function ($stateProvider) {
     $stateProvider.state('about', {
         url: '/about',
         views: {
@@ -15,5 +15,5 @@ angular.module('cmBikers.about', [
     });
 })
 
-.controller('AboutCtrl', function AboutCtrl() {
+.controller('AboutCtrl', function () {
 });

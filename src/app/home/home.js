@@ -21,7 +21,7 @@ angular.module('cmBikers.home', [
  * will handle ensuring they are all available at run-time, but splitting it
  * this way makes each module more "self-contained".
  */
-.config(function config($stateProvider) {
+.config(function ($stateProvider) {
     $stateProvider.state('home', {
         url: '/home',
         views: {
@@ -37,5 +37,5 @@ angular.module('cmBikers.home', [
 /**
  * And of course we define a controller for our route.
  */
-.controller('HomeCtrl', function HomeController() {
+.controller('HomeCtrl', function () {
 });
