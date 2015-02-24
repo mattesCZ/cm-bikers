@@ -6,17 +6,20 @@ angular.module( 'cmBikers', [
     'ui.router'
 ])
 
-.config( function ( $stateProvider, $urlRouterProvider ) {
-    $urlRouterProvider.otherwise( '/home' );
-})
+.config(
+    ['$stateProvider', '$urlRouterProvider',
+    function ( $stateProvider, $urlRouterProvider ) {
+        $urlRouterProvider.otherwise( '/home' );
+    }]
+)
 
 .run( function () {
 })
 
-.controller( 'AppCtrl', function ( $scope ) {
+.controller( 'AppCtrl', ['$scope', function ( $scope ) {
     $scope.$on('$stateChangeSuccess', function(event, toState){
         if ( angular.isDefined( toState.data.pageTitle ) ) {
             $scope.pageTitle = toState.data.pageTitle + ' | CM Bikers' ;
         }
     });
-});
+}]);
