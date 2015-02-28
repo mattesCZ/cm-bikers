@@ -14,6 +14,7 @@
  */
 angular.module('cmBikers.home', [
     'ui.router',
+    'cmbRest',
     'cmbBikerInfoRow'
 ])
 /**
@@ -35,15 +36,12 @@ angular.module('cmBikers.home', [
 }])
 
 .service('BikerService',
-    ['$http',
-    function($http) {
+    ['RestService',
+    function(RestService) {
         var _this = this;
 
         _this.getAllBikers = function () {
-            // TODO load bikers resource via REST API
-            return $http.get('../src/data/bikers.json').then(function(response) {
-                return response.data;
-            });
+            return RestService.get('bikers.json');
         };
     }]
 )
