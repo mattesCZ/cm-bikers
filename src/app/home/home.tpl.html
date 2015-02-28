@@ -15,16 +15,12 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6">
-    <h3>Top bikers</h3>
-    <ul class="list-group">
-      <li class="list-group-item list-group-item-info row">
-        <span class="col-md-3">First name</span>
-        <span class="col-md-3">Last name</span>
-        <span class="col-md-3">Total rides</span>
-        <span class="col-md-3">Total distance</span>
-      </li>
-      <cmb-biker-info-row ng-repeat="biker in ::bikers | orderBy:'-total_distance'" ng-model="biker"></cmb-biker-info-row>
-    </ul>
-  </div>
+  <cmb-biker-top-list bikers="bikers"
+                      header="'Top bikers by total rides'"
+                      order-by="'-total_rides'">
+  </cmb-biker-top-list>
+  <cmb-biker-top-list bikers="bikers"
+                      header="'Top bikers by distance'"
+                      order-by="'-total_distance'">
+  </cmb-biker-top-list>
 </div>

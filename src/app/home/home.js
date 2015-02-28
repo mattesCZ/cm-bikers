@@ -15,6 +15,7 @@
 angular.module('cmBikers.home', [
     'ui.router',
     'cmbRest',
+    'cmbBikerTopList',
     'cmbBikerInfoRow'
 ])
 /**
