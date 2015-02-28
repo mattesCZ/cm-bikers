@@ -1,0 +1,16 @@
+[
+    {
+        "id": 0,
+        "total_rides": 42,
+        "total_distance": 189,
+        "firstname": "Martin",
+        "lastname": "Tesar"
+    },
+    {
+        "id": 1,
+        "total_rides": 12,
+        "total_distance": 264,
+        "firstname": "Peter",
+        "lastname": "Knot"
+    }
+]

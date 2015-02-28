@@ -13,9 +13,9 @@
  * specified, as shown below.
  */
 angular.module('cmBikers.home', [
-    'ui.router'
+    'ui.router',
+    'cmbBikerInfoRow'
 ])
-
 /**
  * Each section or module of the site can also have its own routes. AngularJS
  * will handle ensuring they are all available at run-time, but splitting it
@@ -34,8 +34,28 @@ angular.module('cmBikers.home', [
     });
 }])
 
+.service('BikerService',
+    ['$http',
+    function($http) {
+        var _this = this;
+
+        _this.getAllBikers = function () {
+            // TODO load bikers resource via REST API
+            return $http.get('../src/data/bikers.json').then(function(response) {
+                return response.data;
+            });
+        };
+    }]
+)
+
 /**
  * And of course we define a controller for our route.
  */
-.controller('HomeCtrl', [function () {
-}]);
+.controller('HomeCtrl',
+    ['$scope', 'BikerService',
+    function ($scope, BikerService) {
+        BikerService.getAllBikers().then(function(bikers){
+            $scope.bikers = bikers;
+        });
+    }]
+);

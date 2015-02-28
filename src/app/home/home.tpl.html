@@ -26,8 +26,8 @@
         height="20">
       </iframe>
     </li>
-  </ul> 
-  
+  </ul>
+
   <div class="btn-group">
     <a href="https://github.com/mattesCZ/cm-bikers-client#readme" class="btn btn-large btn-default">
       <i class="fa fa-book"></i>
@@ -39,4 +39,19 @@
     </a>
   </div>
 
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Top bikers</h3>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info row">
+        <span class="col-md-3">First name</span>
+        <span class="col-md-3">Last name</span>
+        <span class="col-md-3">Total rides</span>
+        <span class="col-md-3">Total distance</span>
+      </li>
+      <cmb-biker-info-row ng-repeat="biker in ::bikers | orderBy:'-total_distance'" ng-model="biker"></cmb-biker-info-row>
+    </ul>
+  </div>
 </div>
