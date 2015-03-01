@@ -1,5 +1,5 @@
 angular.module( 'cmBikers', [
-    'templates-app',
+    'templates-states',
     'templates-common',
     'cmBikers.home',
     'cmBikers.about',

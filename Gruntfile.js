@@ -195,7 +195,7 @@ module.exports = function ( grunt ) {
           '<%= vendor_files.js %>',
           'module.prefix',
           '<%= build_dir %>/src/**/*.js',
-          '<%= html2js.app.dest %>',
+          '<%= html2js.states.dest %>',
           '<%= html2js.common.dest %>',
           'module.suffix'
         ],
@@ -325,14 +325,14 @@ module.exports = function ( grunt ) {
      */
     html2js: {
       /**
-       * These are the templates from `src/app`.
+       * These are the templates from `src/states`.
        */
-      app: {
+      states: {
         options: {
-          base: 'src/app'
+          base: 'src/states'
         },
-        src: [ '<%= app_files.atpl %>' ],
-        dest: '<%= build_dir %>/templates-app.js'
+        src: [ '<%= app_files.stpl %>' ],
+        dest: '<%= build_dir %>/templates-states.js'
       },
 
       /**
@@ -381,7 +381,7 @@ module.exports = function ( grunt ) {
           '<%= vendor_files.js %>',
           '<%= build_dir %>/src/**/*.js',
           '<%= html2js.common.dest %>',
-          '<%= html2js.app.dest %>',
+          '<%= html2js.states.dest %>',
           '<%= vendor_files.css %>',
           '<%= build_dir %>/assets/<%= pkg.name %>-<%= pkg.version %>.css'
         ]
@@ -411,7 +411,7 @@ module.exports = function ( grunt ) {
         dir: '<%= build_dir %>',
         src: [
           '<%= vendor_files.js %>',
-          '<%= html2js.app.dest %>',
+          '<%= html2js.states.dest %>',
           '<%= html2js.common.dest %>',
           '<%= test_files.js %>'
         ]
@@ -497,7 +497,7 @@ module.exports = function ( grunt ) {
        */
       tpls: {
         files: [
-          '<%= app_files.atpl %>',
+          '<%= app_files.stpl %>',
           '<%= app_files.ctpl %>'
         ],
         tasks: [ 'html2js' ]
