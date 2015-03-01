@@ -10,8 +10,7 @@ angular.module('cmBikers.about', [
                 controller: 'AboutCtrl',
                 templateUrl: 'about/about.tpl.html'
             }
-        },
-        data: {pageTitle: 'What is It?'}
+        }
     });
 }])
 

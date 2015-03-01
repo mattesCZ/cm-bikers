@@ -31,8 +31,7 @@ angular.module('cmBikers.home', [
                 controller: 'HomeCtrl',
                 templateUrl: 'home/home.tpl.html'
             }
-        },
-        data: {pageTitle: 'Home'}
+        }
     });
 }])
 
