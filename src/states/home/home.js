@@ -29,7 +29,7 @@ angular.module('cmBikers.home', [
         views: {
             'main': {
                 controller: 'HomeCtrl',
-                templateUrl: 'home/home.tpl.html'
+                templateUrl: 'states/home/home.tpl.html'
             }
         }
     });

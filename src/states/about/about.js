@@ -8,7 +8,7 @@ angular.module('cmBikers.about', [
         views: {
             'main': {
                 controller: 'AboutCtrl',
-                templateUrl: 'about/about.tpl.html'
+                templateUrl: 'states/about/about.tpl.html'
             }
         }
     });

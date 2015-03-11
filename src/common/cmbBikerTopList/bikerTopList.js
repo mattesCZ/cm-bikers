@@ -3,7 +3,7 @@ angular.module('cmbBikerTopList', [])
     return {
         restrict: 'E',
         replace: true,
-        templateUrl: 'cmbBikerTopList/bikerTopList.tpl.html',
+        templateUrl: 'common/cmbBikerTopList/bikerTopList.tpl.html',
         scope: {
             header: '=',
             orderBy: '=',

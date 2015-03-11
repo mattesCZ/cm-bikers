@@ -1,6 +1,4 @@
 angular.module( 'cmBikers', [
-    'templates-states',
-    'templates-common',
     'cmBikers.home',
     'cmBikers.about',
     'ui.router'

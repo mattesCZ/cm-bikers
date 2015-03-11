@@ -6,7 +6,7 @@ angular.module('cmbBikerInfoRow', [])
         scope: {
             ngModel: '='
         },
-        templateUrl: 'cmbBikerInfo/bikerInfoRow.tpl.html',
+        templateUrl: 'common/cmbBikerInfo/bikerInfoRow.tpl.html',
         controller: ['$scope', function ($scope) {
             $scope.biker = $scope.ngModel;
         }]
