@@ -4,9 +4,9 @@
     <li class="list-group-item list-group-item-info row">
       <span class="col-md-3">First name</span>
       <span class="col-md-3">Last name</span>
-      <span class="col-md-3">Total rides</span>
-      <span class="col-md-3">Total distance</span>
+      <span ng-click="reorder('-total_rides')" class="col-md-3">Total rides</span>
+      <span ng-click="reorder('-total_distance')" class="col-md-3">Total distance</span>
     </li>
-    <cmb-biker-info-row ng-repeat="biker in ::bikers | orderBy:orderBy" ng-model="biker"></cmb-biker-info-row>
+    <cmb-biker-info-row ng-repeat="biker in bikers | orderBy:orderBy" ng-model="biker"></cmb-biker-info-row>
   </ul>
 </div>
