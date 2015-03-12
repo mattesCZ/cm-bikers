@@ -10,7 +10,14 @@
                     controller: 'HomeCtrl',
                     templateUrl: 'states/home/home.tpl.html'
                 }
+            },
+            resolve: {
+                bikers: ['BikerService', bikers]
             }
         });
     }]);
+
+    function bikers(BikerService) {
+        return BikerService.getAllBikers();
+    }
 })();
