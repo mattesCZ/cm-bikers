@@ -2,7 +2,9 @@
     'use strict';
 
     angular.module('cmBikers.about')
-    .config(['$stateProvider', function ($stateProvider) {
+        .config(['$stateProvider', config]);
+
+    function config($stateProvider) {
         $stateProvider.state('about', {
             url: '/about',
             views: {
@@ -11,5 +13,5 @@
                 }
             }
         });
-    }]);
+    }
 })();

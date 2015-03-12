@@ -2,17 +2,20 @@
     'use strict';
 
     angular.module('cmBikers.common')
-    .service('RestService',
-        ['$http',
-        function($http) {
-            var _this = this,
-                base = '../src/data/';
+        .factory('RestService', ['$http', service]);
 
-            _this.get = function (urlSuffix, config) {
-                return $http.get(base + urlSuffix, config).then(function(response) {
-                    return response.data;
-                });
+    function service($http) {
+        var base = '../src/data/',
+            _this = {
+                get: get
             };
-        }]
-    );
+
+        return _this;
+
+        function get(urlSuffix, config) {
+            return $http.get(base + urlSuffix, config).then(function (response) {
+                return response.data;
+            });
+        }
+    }
 })();

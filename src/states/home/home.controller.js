@@ -2,10 +2,9 @@
     'use strict';
 
     angular.module('cmBikers.home')
-    .controller('HomeCtrl',
-        ['$scope', 'bikers',
-        function ($scope, bikers) {
-            $scope.bikers = bikers;
-        }]
-    );
+        .controller('HomeCtrl', ['$scope', 'bikers', controller]);
+
+    function controller($scope, bikers) {
+        $scope.bikers = bikers;
+    }
 })();

@@ -2,14 +2,17 @@
     'use strict';
 
     angular.module('cmBikers.home')
-    .service('BikerService',
-        ['RestService',
-        function(RestService) {
-            var _this = this;
+        .factory('BikerService', ['RestService', service]);
 
-            _this.getAllBikers = function () {
-                return RestService.get('bikers.json');
-            };
-        }]
-    );
+    function service(RestService) {
+        var _this = {
+            getAllBikers: getAllBikers
+        };
+
+        return _this;
+
+        function getAllBikers() {
+            return RestService.get('bikers.json');
+        }
+    }
 })();

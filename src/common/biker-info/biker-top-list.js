@@ -2,7 +2,9 @@
     'use strict';
 
     angular.module('cmBikers.biker-info')
-    .directive('cmbBikerTopList', function () {
+        .directive('cmbBikerTopList', directive);
+
+    function directive() {
         return {
             restrict: 'E',
             replace: true,
@@ -11,7 +13,14 @@
                 header: '=',
                 orderBy: '=',
                 bikers: '='
-            }
+            },
+            link: linkFn
         };
-    });
+    }
+
+    function linkFn(scope) {
+        scope.reorder = function(property) {
+            scope.orderBy = property;
+        };
+    }
 })();

@@ -2,10 +2,9 @@
     'use strict';
 
     angular.module('cmBikers.common')
-    .config(
-        ['$stateProvider', '$urlRouterProvider',
-        function ( $stateProvider, $urlRouterProvider ) {
-            $urlRouterProvider.otherwise( '/home' );
-        }]
-    );
+        .config(['$urlRouterProvider', config]);
+
+    function config($urlRouterProvider) {
+        $urlRouterProvider.otherwise( '/home' );
+    }
 })();

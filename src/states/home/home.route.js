@@ -2,7 +2,9 @@
     'use strict';
 
     angular.module('cmBikers.home')
-    .config(['$stateProvider', function ($stateProvider) {
+        .config(['$stateProvider', config]);
+
+    function config($stateProvider) {
         $stateProvider.state('home', {
             url: '/home',
             views: {
@@ -15,7 +17,7 @@
                 bikers: ['BikerService', bikers]
             }
         });
-    }]);
+    }
 
     function bikers(BikerService) {
         return BikerService.getAllBikers();
