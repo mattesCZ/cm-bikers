@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('app.home')
+    angular.module('app.biker-info')
         .factory('bikerService', ['restService', bikerService]);
 
     function bikerService(restService) {
