@@ -3,6 +3,6 @@
 
     angular.module('app.common', [
         'ui.router',
-        'app.biker-info'
+        'app.common.biker-info'
     ]);
 })();
