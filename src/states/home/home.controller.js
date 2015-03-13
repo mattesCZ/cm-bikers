@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.home')
-        .controller('HomeCtrl', ['$scope', 'bikers', controller]);
+    angular.module('app.home')
+        .controller('HomeController', ['$scope', 'bikers', HomeController]);
 
-    function controller($scope, bikers) {
+    function HomeController($scope, bikers) {
         $scope.bikers = bikers;
     }
 })();

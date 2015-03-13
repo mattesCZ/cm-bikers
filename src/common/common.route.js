@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    angular.module('cmBikers.common')
+    angular.module('app.common')
         .config(['$urlRouterProvider', config]);
 
     function config($urlRouterProvider) {

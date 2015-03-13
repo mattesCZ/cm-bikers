@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.home')
+    angular.module('app.home')
         .config(['$stateProvider', config]);
 
     function config($stateProvider) {
@@ -9,17 +9,17 @@
             url: '/home',
             views: {
                 'main': {
-                    controller: 'HomeCtrl',
+                    controller: 'HomeController',
                     templateUrl: 'states/home/home.tpl.html'
                 }
             },
             resolve: {
-                bikers: ['BikerService', bikers]
+                bikers: ['bikerService', bikers]
             }
         });
-    }
 
-    function bikers(BikerService) {
-        return BikerService.getAllBikers();
+        function bikers(bikerService) {
+            return bikerService.getAllBikers();
+        }
     }
 })();

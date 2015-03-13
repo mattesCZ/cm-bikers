@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.biker-info')
-        .directive('cmbBikerTopList', directive);
+    angular.module('app.biker-info')
+        .directive('cmbBikerTopList', bikerTopList);
 
-    function directive() {
+    function bikerTopList() {
         return {
             restrict: 'E',
             replace: true,
@@ -16,11 +16,11 @@
             },
             link: linkFn
         };
-    }
 
-    function linkFn(scope) {
-        scope.reorder = function(property) {
-            scope.orderBy = property;
-        };
+        function linkFn(scope) {
+            scope.reorder = function(property) {
+                scope.orderBy = property;
+            };
+        }
     }
 })();

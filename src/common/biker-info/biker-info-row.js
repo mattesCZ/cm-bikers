@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.biker-info')
-        .directive('cmbBikerInfoRow', directive);
+    angular.module('app.biker-info')
+        .directive('cmbBikerInfoRow', bikerInfoRow);
 
-    function directive() {
+    function bikerInfoRow() {
         return {
             restrict: 'E',
             replace: true,
@@ -14,9 +14,9 @@
             templateUrl: 'common/biker-info/biker-info-row.tpl.html',
             controller: ['$scope', controller]
         };
-    }
 
-    function controller($scope) {
-        $scope.biker = $scope.ngModel;
+        function controller($scope) {
+            $scope.biker = $scope.ngModel;
+        }
     }
 })();

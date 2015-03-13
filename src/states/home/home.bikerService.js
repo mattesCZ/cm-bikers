@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.home')
-        .factory('BikerService', ['RestService', service]);
+    angular.module('app.home')
+        .factory('bikerService', ['restService', bikerService]);
 
-    function service(RestService) {
+    function bikerService(restService) {
         var _this = {
             getAllBikers: getAllBikers
         };
@@ -12,7 +12,7 @@
         return _this;
 
         function getAllBikers() {
-            return RestService.get('bikers.json');
+            return restService.get('bikers.json');
         }
     }
 })();

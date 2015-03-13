@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module( 'cmBikers', [
-        'cmBikers.common',
-        'cmBikers.home',
-        'cmBikers.about'
+    angular.module( 'app', [
+        'app.common',
+        'app.home',
+        'app.about'
     ]);
 })();

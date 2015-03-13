@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.about', [
+    angular.module('app.about', [
         'ui.router'
     ]);
 })();

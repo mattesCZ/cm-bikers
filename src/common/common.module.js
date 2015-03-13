@@ -1,8 +1,8 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.common', [
+    angular.module('app.common', [
         'ui.router',
-        'cmBikers.biker-info'
+        'app.biker-info'
     ]);
 })();

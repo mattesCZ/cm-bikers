@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.about')
+    angular.module('app.about')
         .config(['$stateProvider', config]);
 
     function config($stateProvider) {

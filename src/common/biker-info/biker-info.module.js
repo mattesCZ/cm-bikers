@@ -1,5 +1,5 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.biker-info', []);
+    angular.module('app.biker-info', []);
 })();

@@ -1,10 +1,10 @@
 (function() {
     'use strict';
 
-    angular.module('cmBikers.common')
-        .factory('RestService', ['$http', service]);
+    angular.module('app.common')
+        .factory('restService', ['$http', restService]);
 
-    function service($http) {
+    function restService($http) {
         var base = '../src/data/',
             _this = {
                 get: get
